@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromChildren } from 'react-router-dom'
 
@@ -39,10 +38,7 @@ const router = createBrowserRouter(
       <Route path='/user/:userid' element={<User/>}/>
       <Route
       loader={githubInfoLoader}
-      path='/github' element={<Github/>}
-      
-      
-      />
+      path='/github' element={<Github/>}/>
     </Route>
   )
 )

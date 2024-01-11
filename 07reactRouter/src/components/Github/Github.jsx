@@ -13,8 +13,8 @@ function  Github() {
   // }, [])
   
   return (
-    <div  className=' text-center m-4'>Github Followers :{data.followers}
-    <img src={data.avatar_url}  width="100px" alt="" />
+    <div  className=' text-center text-2xl my-6 bg-slate-700 text-white m-auto'>Github Followers :{data.followers}
+    <img className='m-auto my-6' src={data.avatar_url}  width="200px" alt="" />
      </div>
   )
 }
